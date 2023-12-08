@@ -2,20 +2,21 @@
     height: 65vh;
     width: 600px;
     margin: 4rem auto;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.6);
+    padding-top: 1.2rem;
+    box-shadow: 0.8px 0.8px 4px 2px rgba(245, 145, 124,0.9);
+    border-radius: 12px;
 }
 .header{
     display: flex;
     justify-content: center;
 }
 html {
-    background-color: rgba(124, 224, 245, 0.1);
+    background-color: rgba(124, 224, 245, 0.05);
 }
 .description{
-    width: 75%;
+    width: 60%;
     height: 20vh;
-    margin-left: 40px;
-
+    margin-left: 10rem;
 }
 .form-title {
     font-size: 19px;
@@ -30,7 +31,7 @@ html {
 }
 .book-form-content {
     width: 330px;
-    height: 80%;
+    height: 88%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,13 +42,43 @@ html {
     justify-content: space-between;
     
 }
+.t-n-cs {
+    margin: 1rem 0;
+}
+.submit-btn {
+    margin-left: 15rem;
+    margin-top: 3rem;
+    width: 80px;
+    height: 45px;
+    border-radius: 4px;
+}
+.submit-btn input {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 145, 124,0.9);
+    border: none;
+    border-radius: 4px;
+}
 aside {
     position: fixed;
     right: 0;
     top: 0;
-    bottom: 0;
+    bottom: 3rem;
     width: 15rem;
-    background-color: #F5917C;
+    background-color: rgba(245, 145, 124,0.9);
+    padding-top: 2rem;
+}
+.aside-container:nth-child(2) {
+    margin-top: 8rem;
+}
+.img-holder {
+    width: 13rem;
+    height: 8.8rem;
+    margin: 0 auto;
+}
+.img-holder img {
+    width: 13rem;
+    height: 8.8rem;
 }
 footer {
     height: 3rem;
@@ -55,11 +86,13 @@ footer {
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #F15939;
+    background-color: rgba(241, 89, 57, 0.9);
 }
 .rights {
     display: flex;
     flex-direction: column;
     margin-left: 8rem;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
+    font-size: 14px;
+    color: rgb(252, 253, 252);
 }
