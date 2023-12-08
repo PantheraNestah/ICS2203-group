@@ -1,0 +1,14 @@
+.form-wrapper {
+    height: 45vh;
+    width: 600px;
+    margin: 4rem auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+}
+.input-fields {
+    display: block;
+}
