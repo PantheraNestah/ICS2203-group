@@ -11,38 +11,74 @@
 <body>
     <header>
         <nav></nav>
+        <div class="header">
+            <h1>Vintage Accomodation.</h1>
+        </div>
     </header>
+    <aside>
+        
+    </aside>
     <main>
+        <div class="description">
+            <h3>Description</h3>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint consequuntur non repudiandae facilis. Eaque adipisci eius facilis deserunt? Incidunt magni repellat ipsum natus deleniti iusto corporis, harum similique dicta.              
+            </p>
+        </div>
         <section>
             <div class="form-wrapper">
                 <h4 class="form-title">Reservation Form</h4>
                 <form class="book-form">
-                    <span class="input-fields">
-                        <label>Name</label>
-                        <input type="text" placeholder="username" name="name">
-                    </span>
-                    <span class="input-fields">
-                        <label>Email</label>
-                        <input type="email" placeholder="name@example.com" name="email">
-                    </span>
-                    <span class="input-fields">
-                        <label>Phone</label>
-                        <input type="text" placeholder="+254798765432" name="phone">
-                    </span>
-                    <span class="input-fields">
-                        <label>Gender:</label>
-                        <input type="radio" id="gender" name="gender" value="male">
-                        <label>Male</label>
-                        <input type="radio" id="gender" name="gender" value="female">
-                        <label>Female</label>
-                        <br>
-                        <label for="dateinput">Select Date:</label>
-                        <input type="date" id="dateinput" name="dateinput" required>
-                    </span>
+                    <div class="book-form-content">
+                        <span class="input-fields">
+                            <label>Name</label>
+                            <input type="text" placeholder="username" name="name">
+                        </span>
+                        <span class="input-fields">
+                            <label>Email</label>
+                            <input type="email" placeholder="name@example.com" name="email">
+                        </span>
+                        <span class="input-fields">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+254798765432" name="phone">
+                        </span>
+                        <span class="input-fields">
+                            <label>Gender:</label>
+                            <input type="radio" id="gender" name="gender" value="male">
+                            <label>Male</label>
+                            <input type="radio" id="gender" name="gender" value="female">
+                            <label>Female</label>
+                            <br>
+                        </span>
+                        <span class="input-fields">
+                            <span>
+                                <label for="dateinput">Check In</label>
+                                <input type="date" id="dateinput" name="dateinput" required>
+                            </span>
+                            <span>
+                                <label>Nights:</label>
+                                <select>
+                                    <option value="nightsnumber">1</option>
+                                    <option value="nightsnumber">2</option>
+                                    <option value="nightsnumber">3</option>
+                                    <option value="nightsnumber">4</option>
+                                    <option value="nightsnumber">5</option>
+                                </select>
+                            </span>
+                        </span>
+                    </div>
+                    <div style="margin-left: 10rem;margin-top: 3rem;">
+                        <input type="submit" value="Reserve">
+                    </div>
                 </form>
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="rights">
+            <span>Vintage Accomodation</span>
+            <span>copyright &copy; 2023</span>
+        </div>
+    </footer>
 </body>
 </html>
