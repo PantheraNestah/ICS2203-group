@@ -41,15 +41,16 @@
                     <div class="book-form-content">
                         <span class="input-fields">
                             <label>Name</label>
-                            <input type="text" placeholder="username" name="name">
+                            <input type="text" placeholder="username" id="username" name="name">
                         </span>
                         <span class="input-fields">
                             <label>Email</label>
-                            <input type="email" placeholder="name@example.com" name="email">
+                            <input type="email" placeholder="name@example.com"
+                            id="useremail" name="email">
                         </span>
                         <span class="input-fields">
                             <label>Phone</label>
-                            <input type="text" placeholder="+254798765432" name="phone">
+                            <input type="text" placeholder="+254798765432" id="phone" name="phone">
                         </span>
                         <span class="input-fields">
                             <label>Gender:</label>
@@ -66,18 +67,18 @@
                             </span>
                             <span>
                                 <label>Nights:</label>
-                                <select>
-                                    <option value="nightsnumber">1</option>
-                                    <option value="nightsnumber">2</option>
-                                    <option value="nightsnumber">3</option>
-                                    <option value="nightsnumber">4</option>
-                                    <option value="nightsnumber">5</option>
+                                <select name="nightsnumber" id="nightsnumber">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
                             </span>
                         </span>
                     </div>
                     <span class="t-n-cs">
-                        <input type="checkbox"/>
+                        <input type="checkbox" id="tnc" name="tnc" value="true"/>
                         <label>I accept terms and conditions!</label>
                     </span>
                     <div class="submit-btn">
@@ -93,5 +94,6 @@
             <span>copyright &copy; 2023</span>
         </div>
     </footer>
+    <script src="../js/index.js"></script>
 </body>
 </html>
