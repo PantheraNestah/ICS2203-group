@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bnb</title>
+    <style>
+        .form-wrapper {
+            height: 65vh;
+            width: 600px;
+            margin: 4rem auto;
+            padding-top: 1.2rem;
+            box-shadow: 0.8px 0.8px 4px 2px rgba(245, 145, 124,0.9);
+            border-radius: 12px;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+        }
+        html {
+            background-color: rgba(124, 224, 245, 0.05);
+        }
+        .description{
+            width: 60%;
+            height: 20vh;
+            margin-left: 10rem;
+        }
+        .form-title {
+            font-size: 19px;
+            text-align: center;
+        }
+        .book-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 75%;
+            align-items: center;
+        }
+        .book-form-content {
+            width: 330px;
+            height: 88%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .input-fields {
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .t-n-cs {
+            margin: 1rem 0;
+        }
+        .submit-btn {
+            margin-left: 15rem;
+            margin-top: 3rem;
+            width: 80px;
+            height: 45px;
+            border-radius: 4px;
+        }
+        .submit-btn input {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(241, 89, 57, 0.9);
+            border: none;
+            border-radius: 4px;
+            color: rgb(252, 253, 252);
+        }
+        aside {
+            position: fixed;
+            right: 0;
+            top: 0;
+            bottom: 3rem;
+            width: 15rem;
+            background-color: rgba(245, 145, 124,0.9);
+            padding-top: 2rem;
+        }
+        .aside-container:nth-child(2) {
+            margin-top: 8rem;
+        }
+        .img-holder {
+            width: 13rem;
+            height: 8.8rem;
+            margin: 0 auto;
+        }
+        .img-holder img {
+            width: 13rem;
+            height: 8.8rem;
+        }
+        footer {
+            height: 3rem;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba(241, 89, 57, 0.9);
+        }
+        .rights {
+            display: flex;
+            flex-direction: column;
+            margin-left: 8rem;
+            margin-top: 0.2rem;
+            font-size: 14px;
+            color: rgb(252, 253, 252);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav></nav>
+        <div class="header">
+            <h1>Vintage Accomodation</h1>
+        </div>
+    </header>
+    <aside>
+        <section class="aside-container">
+            <div class="img-holder">
+                <img src="{% static 'imgs/kitchen-1170x785.jpeg' %}" alt="kitchen pic">
+            </div>
+        </section>
+        <section class="aside-container">
+            <div class="img-holder">
+                <img src="{% static 'imgs/diner-1170x785.jpeg' %}" alt="kitchen pic">
+            </div>
+        </section>
+    </aside>
+    <main>
+        <div class="description">
+            <h3>Description</h3>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint consequuntur non repudiandae facilis. Eaque adipisci eius facilis deserunt? Incidunt magni repellat ipsum natus deleniti iusto corporis, harum similique dicta.              
+            </p>
+        </div>
+        <section>
+            <div class="form-wrapper">
+                <h4 class="form-title">Reservation Form</h4>
+                <form class="book-form">
+                    <div class="book-form-content">
+                        <span class="input-fields">
+                            <label>Name</label>
+                            <input type="text" placeholder="username" id="username" name="name">
+                        </span>
+                        <span class="input-fields">
+                            <label>Email</label>
+                            <input type="email" placeholder="name@example.com"
+                            id="useremail" name="email">
+                        </span>
+                        <span class="input-fields">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+254798765432" id="phone" name="phone">
+                        </span>
+                        <span class="input-fields">
+                            <label>Gender:</label>
+                            <input type="radio" id="gender" name="gender" value="male">
+                            <label>Male</label>
+                            <input type="radio" id="gender" name="gender" value="female">
+                            <label>Female</label>
+                            <br>
+                        </span>
+                        <span class="input-fields">
+                            <span>
+                                <label for="dateinput">Check In</label>
+                                <input type="date" id="dateinput" name="dateinput" required>
+                            </span>
+                            <span>
+                                <label>Nights:</label>
+                                <select name="nightsnumber" id="nightsnumber">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </span>
+                        </span>
+                    </div>
+                    <span class="t-n-cs">
+                        <input type="checkbox" id="tnc" name="tnc" value="true"/>
+                        <label>I accept terms and conditions!</label>
+                    </span>
+                    <div class="submit-btn">
+                        <input type="submit" value="Reserve">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="rights">
+            <span>Vintage Accomodation</span>
+            <span>copyright &copy; 2023</span>
+        </div>
+    </footer>
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
